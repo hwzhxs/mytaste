@@ -49,8 +49,9 @@ Serif + Sans-serif 混搭。标题和正文必须有明确对比（大小/粗细
 | 场景 | 首要来源 | 说明 |
 |------|---------|------|
 | APP UI（Edge Mobile 等） | `systems/mai.md` + 个人品味 | Design System 优先，个人品味填补空白 |
+| **PPT / Slide Deck** | **`styles/mai-ppt.md`** | **Georgia 标题 + Segoe UI Semilight 正文 + MAI 暖色板** |
 | 网页 / Landing Page | 个人品味优先 | 自由发挥，不受公司规范约束 |
-| PPT / 汇报 | 信息层级优先 | 一页一个焦点，砍 30% 内容再砍 |
+| 数据报告 / 汇报 | `styles/mai-ppt.md` + 个人品味 | PPT 色板 + 信息层级优先 |
 | 品牌 / 视觉传达 | 个人品味优先 | 最自由 |
 | Dashboard / 数据可视化 | 清晰度优先 | 数字右对齐，文字左对齐，颜色表意 |
 
@@ -113,6 +114,11 @@ Serif + Sans-serif 混搭。标题和正文必须有明确对比（大小/粗细
 
 <!-- 格式：- [AI提取] YYYY-MM-DD: 偏好描述 -->
 <!-- 格式：- [纠正] YYYY-MM-DD: 偏好描述 -->
+
+- [AI提取] 2026-04-21: Deck 配音偏好 ElevenLabs Jessica 声（不要 Azure YunxiNeural 男声）。Chinese TTS 语言 heavy 口语化 → see `cards/presentation/chinese-colloquial-narration-style`
+- [AI提取] 2026-04-21: Deck 页面 layout 偏好不对称分栏（40:60 而非 50:50），视觉重心在右侧的 hero 元素（mock / video）
+- [AI提取] 2026-04-21: 箭头视觉偏好：用 Unicode `↓` + CSS `transform: scaleY(2.8)` 拉长，而不是 CSS 画线（保持文字流简洁）。箭头颜色与相关数据（如百分比）一致，不用默认灰色
+- [纠正] 2026-04-22: Hero/卡片容器不要 `border-left` 琥珀色竖条 accent。圆角 + 柔和背景已经够了，再加竖条显得"被 highlight"、不干净。卡片用 background + border-radius 划分区域即可，不用 border accent 强调"这是重点"
 
 ## 参考图
 
